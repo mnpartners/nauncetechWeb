@@ -64,3 +64,31 @@ a { color: #5A9BD8; }
   .hero h1 { font-size: 32px; }
   .section-title { font-size: 24px; }
 }
+
+
+/* Contact form */
+.contact-form { margin-top: 20px; margin-bottom: 40px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 14px; font-weight: 600; color: #1a1a2e; margin-bottom: 6px; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e8e8ee;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #1a1a2e;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #5A9BD8;
+  box-shadow: 0 0 0 3px rgba(90, 155, 216, 0.15);
+}
+.form-group textarea { resize: vertical; }
+.contact-form .btn { margin-top: 8px; padding: 12px 32px; font-size: 15px; border: none; cursor: pointer; }
