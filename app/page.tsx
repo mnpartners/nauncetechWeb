@@ -101,9 +101,13 @@ export default function HomePage() {
           <div className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-3xl border border-violet-100 p-5 sm:p-8 md:p-12">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl flex items-center justify-center text-4xl shadow-lg shadow-violet-200">
-                  🧠
-                </div>
+                <Image
+                  src="/app-logo.png"
+                  alt="MindWeave"
+                  width={80}
+                  height={80}
+                  className="rounded-2xl shadow-lg shadow-violet-200"
+                />
               </div>
 
               <div className="flex-1 min-w-0">

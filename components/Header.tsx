@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -18,9 +19,13 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-sm shadow-violet-200 group-hover:shadow-md group-hover:shadow-violet-200 transition-shadow">
-              <span className="text-white font-bold text-sm">N</span>
-            </div>
+            <Image
+              src="/app-logo.png"
+              alt="MindWeave"
+              width={32}
+              height={32}
+              className="rounded-lg shadow-sm shadow-violet-200 group-hover:shadow-md group-hover:shadow-violet-200 transition-shadow"
+            />
             <span className="font-semibold text-gray-900 text-sm">Nuance Tech</span>
           </Link>
 
